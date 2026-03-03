@@ -1,0 +1,213 @@
+/* body */
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: fit-content;
+        background-color: white; /* or any color you want */
+    }
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color:#1a1a1a !important;
+}
+
+/* footer */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration:underline;
+}
+.f-info-links,.f-info-socials,.f-info-brand{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    background-color: #ebebeb;
+    height: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:space-evenly;
+}
+
+/* cards */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0;
+}
+.card-text{
+    font-weight: 400 !important;
+}
+/* edit-card */
+.listing-link{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* new-Page */
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Edit-page */
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show Page */
+.show-img{
+    height: 40vh;
+}
+.btns{
+    display: flex;
+}
+.filters-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+}
+
+/* Filters scroll container */
+.filters {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 30px;
+    scroll-behavior: smooth;
+    flex: 1; /* takes remaining space between left arrow and right controls */
+}
+
+.filters::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual filter items */
+.filter {
+    flex: 0 0 auto;
+    text-align: center;
+    cursor: pointer;
+    color: #717171;
+    transition: all 0.3s ease;
+    padding-bottom: 8px;
+    padding-top: 1.4rem;
+    border-bottom: 2px solid transparent;
+    min-width: 80px;
+}
+
+.filter:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.filter i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.filter p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Scroll buttons */
+.scroll-btn {
+    border: none;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Right arrow and checkbox group */
+.right-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Checkbox styling */
+.tax-toggle {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    width: 15rem;
+    padding-left: 0.5rem;
+}
+
+.tax-info{
+    display: none;
+}
+
+.filter-link {
+  text-decoration: none;
+  color: inherit;   /* keeps text color same */
+}
+
+.back-btn {
+    background: linear-gradient(45deg, #a0f54a, #266fed);
+    color: white !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 6px 18px !important;
+    transition: 0.3s ease !important;
+}
+.back-btn:hover {
+  transform: scale(1.05) !important;
+}
